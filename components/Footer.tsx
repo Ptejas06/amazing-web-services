@@ -22,11 +22,11 @@ export default function Footer() {
             <a href="#services" className="hover:text-emerald-300 transition-colors">Services</a>
             <a href="#contact" className="hover:text-emerald-300 transition-colors">Contact</a>
             <a
-              href="mailto:consulting@amazingwebservices.com"
+              href="mailto:nagtej64@gmail.com"
               className="inline-flex items-center gap-2 hover:text-emerald-300 transition-colors"
             >
               <Mail className="w-4 h-4" aria-hidden="true" />
-              consulting@amazingwebservices.com
+              nagtej64@gmail.com
             </a>
           </div>
         </div>

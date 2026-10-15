@@ -63,9 +63,9 @@ export default function ContactForm({
                 <h3 className="font-display font-bold text-midnight-900 text-sm">Email</h3>
                 <a
                   className="text-sm text-slate-700 hover:text-emerald-700 underline underline-offset-2"
-                  href="mailto:consulting@amazingwebservices.com"
+                  href="mailto:nagtej64@gmail.com"
                 >
-                  consulting@amazingwebservices.com
+                  nagtej64@gmail.com
                 </a>
               </div>
             </div>
