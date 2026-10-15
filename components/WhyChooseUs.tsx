@@ -46,7 +46,12 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="relative">
+          <div
+            aria-hidden="true"
+            className="absolute left-[16.7%] right-[16.7%] top-11 hidden h-px bg-gradient-to-r from-emerald-300/20 via-emerald-300/70 to-emerald-300/20 md:block"
+          />
+          <div className="relative grid grid-cols-1 gap-5 md:grid-cols-3">
           {PROJECT_STEPS.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -58,15 +63,18 @@ export default function WhyChooseUs() {
                 transition={{ duration: reduceMotion ? 0 : 0.4, delay: reduceMotion ? 0 : index * 0.06 }}
                 className="p-6 rounded-2xl bg-white/[0.05] border border-white/10"
               >
-                <div className="flex items-center justify-between mb-5">
-                  <span className="text-xs font-bold tracking-widest text-emerald-300">{step.number}</span>
-                  <Icon className="w-5 h-5 text-teal-300" aria-hidden="true" />
+                <div className="relative mb-5 flex items-center justify-center">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-300/50 bg-midnight-900 text-xs font-bold tracking-widest text-emerald-200">
+                    {step.number}
+                  </span>
+                  <Icon className="absolute right-0 h-5 w-5 text-teal-300" aria-hidden="true" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-white mb-2">{step.title}</h3>
                 <p className="text-sm text-slate-200 leading-relaxed">{step.description}</p>
               </motion.article>
             );
           })}
+          </div>
         </div>
 
         <div className="mt-8 rounded-2xl border border-emerald-400/25 bg-emerald-400/5 p-6 sm:p-7">

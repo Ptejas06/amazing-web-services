@@ -19,6 +19,10 @@ The form uses Formspree. Create a form in your Formspree account, then set the f
 
 The form ID is public browser configuration, not a secret key. Never put passwords, private API keys, or database credentials in a `NEXT_PUBLIC_` variable.
 
+## FAQ assistant
+
+The floating FAQ assistant uses a small, reviewed set of answers in `components/faqData.ts`. It runs in the visitor's browser and sends no chat messages to a third party. It is not an AI model. Update the FAQ answers there when service details change. A real AI assistant would need a server-side integration so its private API key is not exposed in the browser.
+
 ## Build and deploy
 
 ```bash

@@ -7,6 +7,7 @@ import { Menu, X, ArrowRight } from 'lucide-react';
 const NAV_LINKS = [
   { label: 'Our Services', href: '#services' },
   { label: 'Domain Expertise', href: '#domain-expertise' },
+  { label: 'FAQs', href: '#faqs' },
   { label: 'Why Choose Us', href: '#why-choose-us' },
   { label: 'Contact', href: '#contact' },
 ];
